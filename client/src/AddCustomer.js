@@ -88,8 +88,11 @@ const AddCustomer = ({ saveData }) => {
         <label class="AddCustomerLabel">Number</label>
         <input
         class="AddCustomerInput"
-          type="text"
+          type="tel"
           placeholder="Add Customer Number"
+         maxLength={10}
+          minLength={10}
+          
           value={Member_Number}
           onChange={(e) => setMember_Number(e.target.value)}
         />
