@@ -19,8 +19,22 @@ const AddCustomer = ({ saveData }) => {
     }
     if (!Member_Email.match(/.+@.+.com/)) {
       alert("Please add a valid email (Ex: abc@xyz.com )");
+      return; 
+
+    }
+    if (!Member_Number) {
+      alert("Please add a valid number");
       return;
     }
+    if (!Member_Address) {
+      alert("Please add Address");
+      return;
+    }
+    if (!Member_Type) {
+      alert("Please add a Member Type");
+      return;
+    }
+
     //gkgjmkgjg
     saveData({
       id_Member,
