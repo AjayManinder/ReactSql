@@ -162,8 +162,9 @@ th {
   border-bottom: 1px solid black;
   background-color: bisque;
   border-top: 1px solid black;
+  border-right: 1px solid black;
   height: 45px;
-  width: 118px;
+  width: 115px;
 }
 
 td {
@@ -208,6 +209,7 @@ td {
 .table{
   height:300px;
     overflow: scroll;
+    width: 600px;
     
 }
 

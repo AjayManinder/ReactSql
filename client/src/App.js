@@ -106,6 +106,10 @@ function MyForm() {
 
       <div className="App">
 
+     
+      
+      <table >
+      < div class="table">
       <tr class="tableHead">
    <th>Name</th>
    <th>E-mail</th>
@@ -113,11 +117,6 @@ function MyForm() {
    <th>Address</th>
    <th>Type</th>
  </tr>
-      
-      <table >
-        
-      < div class="table">
-      
  
 {data.data.map(person => {
    
