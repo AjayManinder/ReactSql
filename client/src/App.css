@@ -1,0 +1,201 @@
+.login-form {
+  min-height:100vh;
+  background-image: url("https://media.istockphoto.com/photos/digital-cyberspace-with-particles-and-digital-data-network-high-picture-id1302189748?b=1&k=20&m=1302189748&s=612x612&w=0&h=eU4LXB00wfpaT9bB5uTIBLUEyONjxAlxd_l2qYx4bNE=");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  
+
+}
+label {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.submitButton {
+  margin: 10px;
+  margin-top: 30px;
+  font-size: 15px;
+  background-color: rgba(241, 224, 167, 0.808);
+  border-radius: 10px;
+  pointer-events: stroke;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 100px;
+  font-weight: bold;
+}
+.text-SU {
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(91, 58, 27);
+  background-color: rgba(194, 189, 183, 0.687);
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  text-align: center;
+  height: 60px;
+  width: wi;
+  background-color: rgba(134, 134, 178, 0.281);
+  align-items: center;
+}
+.formstyle {
+  display: flex;
+  flex-direction: column;
+
+  border: 5px solid rgb(101, 49, 12);
+  border-radius: 10px;
+  border-color: rgba(245, 245, 220, 0.399);
+  padding: 50px;
+
+  background-color: rgba(70, 76, 84, 0.851);
+  width: 280px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-style: groove;
+  box-shadow: 5px 7px wheat;
+}
+.containerstyle {
+  display: flex;
+  align-self: center;
+  margin-right: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  text-align: center;
+  margin-top: 130px;
+}
+.headButton {
+  margin-right: 30px;
+}
+
+/* #navhead{  
+margin-left: 550px;  
+} */
+
+.navheadlink {
+  color: aliceblue;
+  margin-left: 80px;
+  font-size: 12px;
+}
+.logo {
+  margin-left: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: azure;
+}
+.leftText {
+  width: 600px;
+  align-self: center;
+  justify-content: flex-end;
+  align-self: center;
+  text-align: center;
+}
+
+.leftText1 {
+  font-size: 50px;
+  color: lightblue;
+}
+.leftText2 {
+  font-size: 35px;
+  color: lightblue;
+}
+
+/* input[type="text"],
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+} */
+
+/* .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+} */
+.label {
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin: 10px;
+}
+.label {
+  font-size: 18px;
+  font-weight: bold;
+  color: beige;
+}
+
+.loginHead {
+  font-size: 25px;
+  margin-bottom: 18px;
+  color: rgb(240, 210, 172);
+  font-weight: 600;
+}
+
+.App {
+  
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+table {
+  border: 2px solid forestgreen;
+  width: 800px;
+
+  background-color: aqua;
+}
+
+th {
+  border-bottom: 1px solid black;
+  background-color: bisque;
+  border-top: 1px solid black;
+  height: 45px;
+}
+
+td {
+  text-align: center;
+  border-right: 2px solid bisque;
+  border-bottom: 1px solid bisque;
+  height: 30px;
+}
+
+/* .flex-row{
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  text-align: center;
+  
+} */
+/* .flex-column{
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+} */
+.fetch-btn{
+  width: 100px;
+  padding: 5px;
+  margin-bottom: 20px;
+
+}
+.button-con{
+
+  justify-content: space-between;
+  align-self: center;
+  text-align: center;
+  margin-top: 10px;
+
+}
