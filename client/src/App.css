@@ -82,7 +82,7 @@ margin-left: 550px;
 } */
 
 .navheadlink {
-  color: aliceblue;
+  color: rgb(103, 171, 230);
   margin-left: 80px;
   font-size: 12px;
 }
@@ -90,7 +90,7 @@ margin-left: 550px;
   margin-left: 40px;
   font-size: 15px;
   font-weight: bold;
-  color: azure;
+  color: rgb(164, 229, 229);
 }
 .leftText {
   width: 600px;

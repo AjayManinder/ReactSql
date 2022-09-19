@@ -1,33 +1,31 @@
-import React, { useState, useEffect } from "react";
-import axios from 'axios';
+import React, { state, useState, useEffect } from "react";
+import axios from "axios";
 import AddCustomer from "./AddCustomer";
 import "./App.css";
-
 
 function MyForm() {
   // const [name, setName] = useState("");
   // const [Password, setPassword] = useState("");
 
-  
-
   // search
-  
-//
 
-  const [data, setData] = useState({data: []});
+
+  //
+
+  const [data, setData] = useState({ data: [] });
   const [isLoading, setIsLoading] = useState(false);
-  const [err, setErr] = useState('');
+  const [err, setErr] = useState("");
 
   const handleClick = async () => {
     setIsLoading(true);
     try {
-      const {data} = await axios.get('http://localhost:5555/api', {
+      const { data } = await axios.get("http://localhost:5555/api", {
         headers: {
-          Accept: 'application/json',
+          Accept: "application/json",
         },
       });
 
-      console.log('data is: ', JSON.stringify(data));
+      console.log("data is: ", JSON.stringify(data));
 
       setData(data);
     } catch (err) {
@@ -38,7 +36,6 @@ function MyForm() {
   };
 
   //
-
 
   // const onAdd = async (customer) => {
   //   const res = await fetch("http://localhost:3000/customers", {
@@ -66,13 +63,26 @@ function MyForm() {
     saveData();
   }, []);
 
+  // const deleteNote = (id) => {
+   
+  //   axios
+  //     .delete(`http://localhost:5555/api/delete/:id/${id}`) // <-- remove ;
+  //     .then(() => {
+  //       // Issue GET request after item deleted to get updated list
+  //       // that excludes note of id
+  //       this.getAllNotes();
+  //     })
+  //     .then((res) => {
+  //       const allNotes = res.data;
+  //       this.setState({ allNotes });
+  //     })
+  //     .catch((err) => {
+  //       console.error(err);
+  //     });
+  // };
+
   return (
-
-
-    
     <div class="login-form">
-
-
       <div class="header">
         <div class="logo"> Member </div>
 
@@ -91,60 +101,51 @@ function MyForm() {
           <button class="headButton">SIGN UP</button>
         </div>
       </div>
-//
-
+      //
       <div class="flex-row">
-        <AddCustomer saveData={saveData}/>
+        <AddCustomer saveData={saveData} />
+        <div className="App">
+          <table>
+            <div class="table">
+              <tr class="tableHead">
+                <th>Name</th>
+                <th>E-mail</th>
+                <th>Number</th>
+                <th>Address</th>
+                <th>Type</th>
+              </tr>
 
-       
-        
-     
-
-
-
-     
-
-      <div className="App">
-
-     
-      
-      <table >
-      < div class="table">
-      <tr class="tableHead">
-   <th>Name</th>
-   <th>E-mail</th>
-   <th>Number</th>
-   <th>Address</th>
-   <th>Type</th>
- </tr>
- 
-{data.data.map(person => {
-   
-  return (
-   
-      
-    <tr key={person.id_Member}>
-      <td>{person.Member_Name}</td>
-      <td>{person.Member_Email}</td>
-      <td>{person.Member_Number}</td>
-      <td>{person.Member_Address}</td>
-      <td>{person.Member_Type}</td>
-      <br />
-    </tr>
-    
-    
-  );
-})}
-</div>
-</table>
-
-</div>
-<div class="button-con">
-<button class='fetch-btn' onClick={ handleClick}>Fetch data</button>
-</div>
+              {data.data.map((person) => {
+                return (
+                  <tr key={person.id_Member}>
+                    <td>{person.Member_Name}</td>
+                    <td>{person.Member_Email}</td>
+                    <td>{person.Member_Number}</td>
+                    <td>{person.Member_Address}</td>
+                    <td>{person.Member_Type}</td>
+                    <br />
+                  </tr>
+                );
+              })}
+            </div>
+          </table>
+        </div>
+        <div class="button-con">
+          {/* <button
+            type="button"
+            className="btn-xs btn-info float-right"
+            onClick={() => this.props.deleteNote()}
+          >
+            <span>
+              <i className="fas fa-trash-alt" />
+            </span>{" "}
+            Delete
+          </button> */}
+          <button class="fetch-btn" onClick={handleClick}>
+            Fetch data
+          </button>
+        </div>
       </div>
-
-
       {/* <div class="containerstyle">
         <div class="leftText">
           <div class="leftText1">NOT A MEMBER YET?</div>
@@ -182,6 +183,5 @@ function MyForm() {
     </div>
   );
 }
-
 
 export default MyForm;
